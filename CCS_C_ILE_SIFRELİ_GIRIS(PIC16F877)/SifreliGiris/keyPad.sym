@@ -1,0 +1,122 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+006     lcdlat
+006     lcd
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-026 girilen
+027-02D sifre
+02E     sayac
+02F     dogruluk
+030     yanlis
+031     lcd_init.i
+031     sorgu.i
+031     tusKontrol.@SCRATCH1
+032-035 lcd_init.LCD_INIT_STRING
+032     sorgu.@SCRATCH1
+032     @PSTRINGC7_640.@SCRATCH1
+032     tusKontrol.@SCRATCH2
+033     @PRINTF_D_640.P1
+033     @PSTRINGCN7_640.P2
+033     sorgu.@SCRATCH2
+033     @PSTRINGC7_640.@SCRATCH2
+034     @PRINTF_D_640.P1
+034     @PSTRINGC7_640.@SCRATCH3
+034     @PSTRINGCN7_640.@SCRATCH1
+035     @PSTRINGC7_640.@SCRATCH4
+035     @PSTRINGCN7_640.@SCRATCH2
+035     @PRINTF_D_640.@SCRATCH1
+036     lcd_init.@SCRATCH1
+036     @PSTRINGCN7_640.@SCRATCH3
+036     @PRINTF_D_640.@SCRATCH2
+037     @PSTRINGCN7_640.@SCRATCH4
+037     @PRINTF_D_640.@SCRATCH3
+038     @PRINTF_D_640.@SCRATCH4
+039     @DIV88.P1
+039     lcd_putc.c
+03A     @DIV88.P1
+03A     lcd_gotoxy.x
+03A     @delay_ms1.P1
+03B     lcd_gotoxy.y
+03B     @DIV88.@SCRATCH1
+03C     lcd_gotoxy.address
+03D     lcd_gotoxy.@SCRATCH1
+03E     lcd_send_byte.address
+03F     lcd_send_byte.n
+040     lcd_read_byte.low
+040     lcd_send_byte.@SCRATCH1
+041     lcd_send_nibble.n
+041     lcd_read_byte.high
+042     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086     lcdtris
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const659.call
+000005  @const662.call
+00000C  @const663.call
+000018  @const672.call
+000028  @const673.call
+000038  @const674.call
+00003C  @const688.call
+00004C  @delay_ms1
+000061  lcd_send_nibble
+00006D  lcd_read_nibble
+000073  lcd_send_byte
+000079  lcd_read_byte
+0000B3  lcd_init
+0000F1  lcd_gotoxy
+000103  lcd_putc
+00012F  @PSTRINGC7_640
+000185  @DIV88
+00019A  tusKontrol
+000269  sorgu
+0002A9  @PSTRINGCN7_640
+000303  @PRINTF_D_640
+000385  @cinit1
+000385  MAIN
+000390  @cinit2
+
+Project Directory:
+    C:\Users\User\Desktop\ccs cs\keyPad\
+
+Project Files:
+    keyPad.c                                                [17-Tem-21 15:26  CRC=95FA2B1E]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877.h [12-Kas-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [19-Eyl-13 15:38  CRC=D1A6378A]
+
+Source signature=E6FBAB7F
+
+Units:
+    keyPad (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   keyPad.xsym
+    Errors:      keyPad.err
+    Ext Symbols: keyPad.esym
+    INHX8:       keyPad.hex
+    Symbols:     keyPad.sym
+    List:        keyPad.lst
+    Debug/COFF:  keyPad.cof
+    Project:     keyPad.ccspjt
+    Call Tree:   keyPad.tre
+    Statistics:  keyPad.STA

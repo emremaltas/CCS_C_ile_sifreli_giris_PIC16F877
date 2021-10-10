@@ -1,0 +1,20 @@
+[PROJECT]
+Target=keyPad.hex
+Processor_Text=PIC16F877
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=keyPad.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[keyPad.c]
+Type=4
+[mru-list]
+1=keyPad.c
+[Opened Files]
+1=keyPad.c
+2=
+3=
+[Units]
+Count=1
+1=keyPad (main)

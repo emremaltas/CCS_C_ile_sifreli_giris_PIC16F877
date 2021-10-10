@@ -1,0 +1,69 @@
+
+ROM used:   970/8192 (12%)
+            970/8192 (12%) including unused fragments
+
+            0.8 Average locations per line
+            4.1 Average locations per statement
+
+RAM used:   22/368 (6%) at main() level
+            40/368 (11%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  112   150  64  keyPad.c
+  639     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877.h
+  456    84  36  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 1207   234 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   2    1             @delay_ms1
+ Inline         3   596  5.9  lcd_read_byte
+0      6   1    0    59  4.2  lcd_read_nibble
+0     12   1    1   179  3.3  lcd_send_nibble
+0     64   7    3   460  4.7  lcd_send_byte
+0     62   6    6   814  7.2  lcd_init
+0     18   2    4   208  6.3  lcd_gotoxy
+0     44   5    1   354  4.7  lcd_putc
+ Inline         2   780  6.6  sorgu
+0      1   0    0             @const659
+0     86   9    4             @PSTRINGC7_640
+0      7   1    0             @const662
+0     12   1    0             @const663
+ Inline         5             @PSTRINGCN7_640
+0     21   2    3             @DIV88
+ Inline         6  2967  4.9  @PRINTF_D_640
+0     16   2    0   359  2.3  @const672
+0     16   2    0             @const673
+0    491  51    2  3072  5.9  tusKontrol
+0      4   0    0  3046  5.9  @const674
+0     69   7    0   359  2.3  MAIN
+0     16   2    0   359  2.3  @const688
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               14
+    Statements              234
+    Comments                211
+    Volume (V)              20229
+    Difficulty (D)          63.1
+    Effort to implement (E) 1275948
+    Time to implement (T)   19 hours, 41 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   48
+    Maintainability (MI)    73
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   966  1078  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
