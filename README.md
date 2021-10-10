@@ -1,4 +1,4 @@
-# CCS_C_ILE_SIFREL-_GIRIS-PIC16F877-
+# CCS_C_ILE_SIFRELI_GIRIS-PIC16F877-
 
 ---------------Yazılım ne yapıyor?----------------------
 
