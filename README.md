@@ -1,5 +1,5 @@
 # CCS_C_ILE_SIFRELI_GIRIS-PIC16F877-
-
+Çalışma videosu: https://youtu.be/sptNcAGLcRA
 ---------------Yazılım ne yapıyor?----------------------
 
 Devre çalıştırıldığında keypaden şifre girilicek ise öncelikle "*" tuşuna basmasını ardından şifrenin girilip "#" tuşuna basılması gerekmektedir.
